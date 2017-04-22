@@ -2,18 +2,17 @@ public class DriverExam
 {
        
 	// String array of the correct answers
-	private static String[] correctAnswers = 
-	                                 {"B", "D", "A", "A", "C", "A", "B", "A", "C", "D", 
-	                                  "B", "C", "D", "A", "D", "C", "C", "B", "D", "A"};
-	
+	private  static char[] correctAnswers = { 'B', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D',
+                        'B', 'C', 'D', 'A', 'D', 'C', 'C', 'B', 'D', 'A' };
+                        
 	// String array for the user's answers
-	private static String[] userAnswers = new String[20];
+	private  static char[] userAnswers = new char[20];
 	
 	// int for correct answers
 	private static int correct;
 	
 	// Constructor
-	public DriverExam(String[] userAnswers) 
+	public DriverExam(char[] userAnswers) 
 	{
 		this.userAnswers = userAnswers;
 	}
@@ -22,7 +21,7 @@ public class DriverExam
 	{
 		for(int count = 0; count < correctAnswers.length; count++)
 		{
-			if (correctAnswers[count].equals(userAnswers[count])) 
+			if ((correctAnswers[count])==userAnswers[count])
 			{
 				correct ++;
 			}
@@ -35,35 +34,38 @@ public class DriverExam
 		}
 		return false;
 	}
-	
+	//Get's total correct
 	public static int totalCorrect() 
 	{
 		return correct;
 	}
-	
+	//Get's total incorrect
 	public static int totalIncorrect() 
 	{
 		return 20 - correct;
 	}
-	
+	//Get's the missed questions
 	public static int[] questionsMissed()
-  int size = 20 - totalCorrect();
+ {
+
+  int errors = 20 - totalCorrect();
 
   int[] missed = {};
-  if (size < 1)
+  if (errors < 1)
   return missed;
   else
-  missed = new int [size];
+  missed = new int [errors];
 
-  int pos = 0;
+  int x = 0;
   for (int i = 0; i < 20; i++)
   {
    if (correctAnswers [i] != userAnswers[i])
    {
-    missed[pos] = (i + 1);
-    pos = pos + 1;
+    missed[x] = (i + 1);
+    x = x + 1;
    }
   }
   return missed;
-}
 
+ }
+}
