@@ -47,18 +47,23 @@ public class DriverExam
 	}
 	
 	public static int[] questionsMissed()
-	{
+  int size = 20 - totalCorrect();
 
+  int[] missed = {};
+  if (size < 1)
+  return missed;
+  else
+  missed = new int [size];
 
- 	 for (int i = 0; i < 20; i++)
- 		 {
-  	 if (correctAnswers[i] != userAnswers[i])//comapres answers
-   		{
-        int[i] missed = {};//initlizeses missed and grabs the number it is comparing it to.
-  	if (missed < 1)//if it's not the right answer it will be considered a missed
-	return missed;	//return the number that it missed.
-   		}
- 		 }	
-	}
+  int pos = 0;
+  for (int i = 0; i < 20; i++)
+  {
+   if (correctAnswers [i] != userAnswers[i])
+   {
+    missed[pos] = (i + 1);
+    pos = pos + 1;
+   }
+  }
+  return missed;
 }
 
