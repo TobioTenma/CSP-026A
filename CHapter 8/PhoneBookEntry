@@ -1,18 +1,18 @@
-public class PhoneBookEntryTest {
-
-    public static String Name;
-    private int Number;
-    public PhoneBookEntryTest (String nameF, int pNumber)
+public class PhoneBookEntry {
+	private String Name;
+    private long Number;
+    public PhoneBookEntry (String nameF, long pNumber)
     {
         Name = nameF;
         Number = pNumber;
     }
     public String toString ()
     {
-        return  " The name is " + Name + " The number is " + Number + ".";
+        return  " The name is " + Name + ". The number is " + Number + ".";
     }
     public String getName ()
     {
         return Name;
     }
 }
+
