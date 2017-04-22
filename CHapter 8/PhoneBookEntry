@@ -11,17 +11,6 @@ public class PhoneBookEntryTest {
     {
         return  " The name is " + Name + " The number is " + Number + ".";
     }
-    public boolean equals (Object other)
-    {
-        return (Name.equals(((PhoneBookEntryTest)other).getName()));
-    }
-    public int compareTo (Object other)
-    {
-        int result;
-        String otherFirst = ((PhoneBookEntryTest)other).getName();
-            result = Name.compareTo(otherFirst);
-            return result;
-    }
     public String getName ()
     {
         return Name;
