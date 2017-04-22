@@ -42,7 +42,7 @@ public class GetAnswers
             //Keeps answer from user into an array
             answers[i] = user;
             
-            //Adds so the 
+            //Adds so the current number.
             current ++;
       }
 
