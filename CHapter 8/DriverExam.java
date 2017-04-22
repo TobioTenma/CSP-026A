@@ -15,19 +15,25 @@ public class DriverExam
 		this.userAnswers = userAnswers;
 	}
 	
-	public static boolean passed() 
+	public static boolean passed(userAnswers, correctAnswers ) 
 	{
-		
+		correctAnswers.comapreTO(userAnswers)
+			
+	        Return correct >= 15;
 	}
 	
-	public static int totalCorrect() 
+	public static int totalCorrect(correct) 
 	{
-		
+		Return correct
 	}
 	
-	public static int totalIncorrect() 
+	public static int totalIncorrect(correct) 
 	{
+		private int Answers = 20
+			
+		private int incorrect = 20 - correct; 
 		
+		return incorrect
 	}
 	
 	public static int[] questionsMissed()
