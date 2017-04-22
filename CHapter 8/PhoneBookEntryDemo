@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+public class PhoneBookEntryDemo
+{
+    public static void main (String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<PhoneBookEntryTest> transfer = new ArrayList<PhoneBookEntryTest>();
+        char continueing = 'y';
+        //Declaring
+        String Name;
+        //Declaring
+        int code;
+            do
+            {
+                //Getting name
+                System.out.print("Enter you last and first name. ");
+                System.out.print("Seapreat them by a comma. ");
+                Name = scanner.next();
+               
+                //Entering number
+                System.out.print("");
+                System.out.print("Enter the number");
+                code = scanner.nextInt();
+               
+                //Adding stuff
+                transfer.add (new PhoneBookEntryTest(Name, code));
+               
+                //Asking the user if he wants to make another list. 
+                System.out.print("Enter y to make another list");
+                continueing = scanner.nextLine().charAt(0);
+            }while (continueing == 'y' || continueing == 'Y');
+            for(PhoneBookEntryTest trans : transfer)
+            System.out.println(trans);
+    }
+}
