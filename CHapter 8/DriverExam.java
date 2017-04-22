@@ -2,12 +2,15 @@ public class DriverExam
 {
        
 	// String array of the correct answers
-	private String[] correctAnswers = 
+	private static String[] correctAnswers = 
 	                                 {"B", "D", "A", "A", "C", "A", "B", "A", "C", "D", 
 	                                  "B", "C", "D", "A", "D", "C", "C", "B", "D", "A"};
 	
 	// String array for the user's answers
-	private String[] userAnswers = new String[20];
+	private static String[] userAnswers = new String[20];
+	
+	// int for correct answers
+	private static int correct;
 	
 	// Constructor
 	public DriverExam(String[] userAnswers) 
@@ -15,28 +18,35 @@ public class DriverExam
 		this.userAnswers = userAnswers;
 	}
 	
-	public static boolean passed(userAnswers, correctAnswers ) 
+	public static boolean passed() 
 	{
-		correctAnswers.comapreTO(userAnswers)
-			
-	        Return correct >= 15;
-	}
-	
-	public static int totalCorrect(correct) 
-	{
-		Return correct
-	}
-	
-	public static int totalIncorrect(correct) 
-	{
-		private int Answers = 20
-			
-		private int incorrect = 20 - correct; 
+		for(int count = 0; count < correctAnswers.length; count++)
+		{
+			if (correctAnswers[count].equals(userAnswers[count])) 
+			{
+				correct ++;
+			}
+		}
 		
-		return incorrect
+		//the student has to get at least 15 correct
+		if (correct >= 15) 
+		{
+			return true;
+		}
+		return false;
 	}
 	
-	public static int[20] questionsMissed()
+	public static int totalCorrect() 
+	{
+		return correct;
+	}
+	
+	public static int totalIncorrect() 
+	{
+		return 20 - correct;
+	}
+	
+	public static int[] questionsMissed()
 	{
 		
 	}
