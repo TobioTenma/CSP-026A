@@ -8,3 +8,10 @@ private String[] correctAnswers =
 
 
 }
+
+   public DriverExam (int x){
+   
+   this.correctAnswers = x;
+   
+   }
+   
