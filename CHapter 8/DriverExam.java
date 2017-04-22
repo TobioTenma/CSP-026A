@@ -36,7 +36,7 @@ public class DriverExam
 		return incorrect
 	}
 	
-	public static int[] questionsMissed()
+	public static int[20] questionsMissed()
 	{
 		
 	}
