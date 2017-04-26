@@ -42,7 +42,7 @@ public class RoomDimension
    }
    
   public String toString() {
-	return "";
+	return "The rooms dimension is " + length + ", width=" + width + ".";
 }
   
 
