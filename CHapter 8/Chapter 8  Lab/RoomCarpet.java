@@ -1,12 +1,23 @@
 public class RoomCarpet
 {
-private double cost;
+
+private double Carpetcost;
+private double size;
+
+
+RoomDemension dim = new RoomDemension(size);
+
  
- public RoomCarpet(double cost){
+ public RoomCarpet(double dim, double cost){
  
-RoomDemension RoomDem = new RoomDemension();
-double size = RoomDem.getArea();
  
+ }
+ 
+  public RoomDemension(RoomCarpet rd){
+ 
+this.dim = rd.getdim();
+ 
+this.cost = rd.getcost();
  
  }
 
