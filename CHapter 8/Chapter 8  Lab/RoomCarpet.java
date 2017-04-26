@@ -37,7 +37,7 @@ private RoomDimension size;
 	}
 
     public String toString() {
-        return "RoomCarpet is " + size + ", costOfCarpet=" + Carpetcost + ", " + "total cost=" + getTotalCost() + "]";
+        return "RoomCarpet is " + size + ", The cost of the carpet is " + Carpetcost + ", " + " the total cost is " + getTotalCost() + "]";
     }
 
 
