@@ -8,7 +8,7 @@ private double size;
 RoomDimension  dim = new RoomDimension (size);
 
  
- public RoomCarpet(double dim, double cost)
+ public RoomCarpet(RoomDimension dim, double cost)
  {
  
         this.roomDimensions = dim;
@@ -16,7 +16,7 @@ RoomDimension  dim = new RoomDimension (size);
  }
  
   
-  public RoomDemension(RoomCarpet rd)
+  public RoomDimension(RoomCarpet rd)
   {
  
       this.dim = rd.getdim();
@@ -30,13 +30,15 @@ RoomDimension  dim = new RoomDimension (size);
    {
     return Carpetcost * RoomDimension.getArea();
    }
-   
+   //gets carpetcost
    public static double getCarpetCost()
    {
 		return carpetCost;
 	}
 
-
+    public String toString() {
+        return "RoomCarpet is " + roomDimensions + ", costOfCarpet=" + costOfCarpet + ", " + "total cost=" + getTotalCost() + "]";
+    }
 
 
 }
