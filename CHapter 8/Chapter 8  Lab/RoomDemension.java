@@ -1,11 +1,11 @@
-public class RoomDemension
+public class RoomDimension
 {
  //Initilazation
- private double width;
- private double length;
+ private static double width;
+ private static double length;
  
  //constructors
- public RoomDemension(double width, double length){
+ public RoomDimension(double width, double length){
  
  this.width = width;
  this.length = length;
@@ -13,7 +13,7 @@ public class RoomDemension
  
  }
  
- public RoomDemension(RoomDemension rd){
+ public RoomDimension(RoomDimension rd){
  
  this.width = rd.getwidth();
  
@@ -34,7 +34,7 @@ public class RoomDemension
  }
  
    //Get the area
- public double getArea(){
+ public static double getArea(){
    double area = length * width;
    
    return area;
