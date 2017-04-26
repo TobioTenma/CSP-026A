@@ -1,27 +1,27 @@
 public class RoomCarpet
 {
 
-private double Carpetcost;
-private double size;
+private static double Carpetcost;
+private RoomDimension size;
 
 
-RoomDimension  dim = new RoomDimension (size);
+
 
  
  public RoomCarpet(RoomDimension dim, double cost)
  {
  
-        this.roomDimensions = dim;
-        this.costOfCarpet = costOfCarpet;
+        this.size = dim;
+        this.Carpetcost= cost;
  }
  
   
-  public RoomDimension(RoomCarpet rd)
+  public RoomCarpet(RoomCarpet rd)
   {
  
-      this.dim = rd.getdim();
+      this.size = rd.size;
  
-      this.cost = rd.getcost();
+      this.Carpetcost = rd.Carpetcost;
  
  }
 
@@ -33,11 +33,11 @@ RoomDimension  dim = new RoomDimension (size);
    //gets carpetcost
    public static double getCarpetCost()
    {
-		return carpetCost;
+		return Carpetcost;
 	}
 
     public String toString() {
-        return "RoomCarpet is " + roomDimensions + ", costOfCarpet=" + costOfCarpet + ", " + "total cost=" + getTotalCost() + "]";
+        return "RoomCarpet is " + size + ", costOfCarpet=" + Carpetcost + ", " + "total cost=" + getTotalCost() + "]";
     }
 
 
