@@ -13,10 +13,10 @@ public class BankAccountTest
                 deposit += total;
             }
             
-            public void withdraw(double amount)
+            public void withdraw(double total)
             {
-                balance -= amount;
-                withdraw += amount;
+                balance -= total;
+                withdraw += total;
             }
             
             public void monthlyProcess(double monthlyInterest)
