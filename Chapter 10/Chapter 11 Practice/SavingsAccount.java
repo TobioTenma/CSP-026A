@@ -26,7 +26,9 @@ public class SavingAccountTest extends BankAccountTest
        {
            return true;
         }
-        else return false;
+        else 
+        
+        return false;
     }
 @Override
     public boolean withdraw (double total)
@@ -39,18 +41,18 @@ public class SavingAccountTest extends BankAccountTest
         else return false;
     }
 
-   public abstract void bankingFees() (
+   public abstract void bankingFees() {
 
-   if withdraw > 4
-   (
+   if (withdraw > 4);
+   {
       total = years * 10 + 1;
       
-   )
+   }
    
    else 
    
-   return false   
-) 
+   return false;
+} 
 
 
-)
+}
