@@ -10,6 +10,13 @@ public class SavingAccountTest extends BankAccountTest
   
   private int years; 
   
+  //Constructor
+	
+	public SavingAccountTest(){
+		deposite=0;
+		withdrawls=0;
+	}
+  
   
 @Override
   
