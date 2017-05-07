@@ -1,13 +1,9 @@
 public class SavingAccountTest extends BankAccountTest
 {
   private int deposite;
-  
   private int withdrawls;
-  
   private int minAmount = 25;
-  
-  private int total;
-  
+  private int total; 
   private int years; 
   
   //Constructor
@@ -38,7 +34,9 @@ public class SavingAccountTest extends BankAccountTest
           super.withdraw(total);
            return true;
         }
-        else return false;
+        else 
+       
+        return false;
     }
 
    public abstract void bankingFees() {
@@ -49,10 +47,10 @@ public class SavingAccountTest extends BankAccountTest
       
    }
    
-   else 
+   else
    
-   return false;
-} 
+  return false;
+   } 
 
 
 }
