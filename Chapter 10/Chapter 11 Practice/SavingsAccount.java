@@ -4,7 +4,8 @@ public class SavingAccountTest extends BankAccountTest
   private int withdrawls;
   private int minAmount = 25;
   private int total; 
-  private int years; 
+  private int years;
+  private boolean bool;
   
   //Constructor
 	
@@ -14,43 +15,37 @@ public class SavingAccountTest extends BankAccountTest
 	}
   
   
-@Override
-  
-  public boolean desposit (double total)
+  public boolean (){
+  if(25 < balance)
+   
+   Bool=false;
+   
+   else
+
+   true
+   }
+ 
+ 
+ @Override
+  public  desposit (double total)
    {
-       if (minAmount > total) 
-       {
-           return true;
-        }
-        else 
-        
-        return false;
+      return deposit 
     }
 @Override
-    public boolean withdraw (double total)
+    public  double withdraw (double total)
    {
-       if (true) 
-       {
-          super.withdraw(total);
-           return true;
-        }
-        else 
+     return withdraw
        
-        return false;
+      
     }
 
-   public abstract void bankingFees() {
+   public abstract  (double total) {
 
    if (withdraw > 4);
    {
       total = years * 10 + 1;
       
    }
-   
-   else
-   
-  return false;
+
    } 
 
-
-}
