@@ -1,19 +1,25 @@
 class ParkingMeter {
 
-    private int boughtTime;
+    double boughtTime;
 
-    public ParkingMeter(int boughtTime){
+   //constrcutor
+    public ParkingMeter(double boughtTime){
     
     boughtTime = boughtTime;
     
     }
    
-    public void createboughtTime() 
-       {
+    public void setboughtTime(double boughtTime) 
+   {
        
        this.boughtTime = boughtTime;
        
-       }
-
+   }
+   
+   public double getboughtTime()
+   {
+   
+      return boughtTime;
+   }
 
 }
