@@ -6,6 +6,16 @@ class ParkedCar {
     private int licenseNum;
     private int minutes;
     
+    public ParkedCar(String make, String model, String color, int licenseNum, int minutes){
+    
+    make = make;
+    model = model;
+    color = color;
+    licenseNum = licenseNum;
+    minutes = minutes;
+    
+    }
+    
     
        public void createMake() 
        {
