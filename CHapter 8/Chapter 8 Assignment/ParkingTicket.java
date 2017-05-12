@@ -1,26 +1,44 @@
 public class ParkingTicket {
 	
 	//Making a refrence
-	private PoliceOfficer officer;
-	private String officerName;
-	private double officerBadgeNumber;
-	//Making a refrence
-	private  ParkingMeter bTime;
-	private double boughtTime;
+	private PoliceOfficer officerStuff;
+	private String copName;
+	private double badgeNum;
+	private double fine;
 	
+	//Making a refence
+	private ParkedCar parkCar;
+	private String make;
+	private String model;
+	private String color;
+	private double licenseNum;
 	
-	public ParkingTicket(double boughtTime, ParkingMeter bTime, PoliceOfficer officer)
+	public ParkingTicket(double boughtTime, PoliceOfficer officer, double fine)
 	{	
 		officer = officer;
-		officerName = officer.getcopName();
-		officerBadgeNumber = officer.getbadgeNum();
+		copName = officerStuff.getcopName();
+		badgeNum = officerStuff.getbadgeNum();
+		fine = officerStuff.calculateFine();
 		
-		bTime = bTime;
-		boughtTime  = bTime. getboughtTime();
+		make = parkCar.getMake();
+		model = parkCar.getModel();
+		color = parkCar.getColor();
+		licenseNum = parkCar.getLicenseNum();
+		
 		
 	}
 	
+	
+	  public ParkingTicket(ParkingTicket rd)
+	  {
+	 
+	      this.fine = rd.fine;
+	 
+	 }
+	
 	  public String toString() {
-			return "The time they bought is "+ boughtTime + ". ";
+			return "The fine is "+ fine + "From officer " + copName + " badge number " + badgeNum
+					+ " the car makes, model, coler, and licinse number is " + make +", " + model + 
+					color + licenseNum;
 		}
 }
