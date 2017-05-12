@@ -18,39 +18,40 @@ public class ParkedCar {
 	    }
 
 
-	       public void setMake(String make)
+	      public String getMake()
+	      {
+
+	      return make;
+	      }
+	    
+	    
+
+	       public String getModel()
 	       {
 
-	       this.make = make;
+	       return model;
 
 	       }
 
-	       public void setModel(String model)
+	       public String getColor()
 	       {
 
-	       this.model = model;
-
-	       }
-
-	       public void setColor(String color)
-	       {
-
-	       this.color = color;
+	       return color;
 
 	       }
 
 
-	       public void setLicenseNum(double licenseNum)
+	       public double getLicenseNum()
 	       {
 
-	       this.licenseNum = licenseNum;
+	       return licenseNum;
 
 	       }
 
-	       public void setHour(int hour)
+	       public double getHour()
 	       {
 
-	       this.hour = hour;
+	       return hour;
 
 	       }
 
