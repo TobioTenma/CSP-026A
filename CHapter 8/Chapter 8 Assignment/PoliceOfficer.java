@@ -53,7 +53,7 @@ public class PoliceOfficer{
             	 return this.totalFine;
             }
             
-        return 0;
+            return this.totalFine;
         }
           
 
