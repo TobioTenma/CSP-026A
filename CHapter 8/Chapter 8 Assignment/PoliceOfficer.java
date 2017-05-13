@@ -36,7 +36,7 @@ public class PoliceOfficer{
    //Finds if the car has overstayed parking
     double total (ParkedCar carStuff){
     	
-        totalTime = boughtTime - carStuff.getHour();
+        totalTime =  carStuff.getHour() - boughtTime;
     	
     	return totalTime;
     }
@@ -46,14 +46,13 @@ public class PoliceOfficer{
     //Determines if the car overstaed parking
         public double getCalculateFine() {
 
-            if (totalTime > 0){
+             
             	
             	 totalFine = totalTime * 25;
             
-            	 return this.totalFine;
-            }
+            	 
             
-            return this.totalFine;
+            return totalFine;
         }
           
 
