@@ -7,7 +7,7 @@ public class PoliceOfficer{
     private double totalFine;
     
 
-    public PoliceOfficer(String copName, double badgeNum, double boughtTime){
+    public PoliceOfficer(String copName, double badgeNum){
 
     super();
     this.copName = copName;
