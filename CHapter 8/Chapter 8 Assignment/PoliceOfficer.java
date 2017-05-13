@@ -5,8 +5,7 @@ public class PoliceOfficer{
     private double boughtTime;
     private double totalTime;
     private double totalFine;
-	public double getCalculateFine;
-    
+    public double getCalculateFine;
 
     public PoliceOfficer(String copName, double badgeNum){
 
@@ -38,7 +37,7 @@ public class PoliceOfficer{
     	
         totalTime =  carStuff.getHour() - boughtTime;
     	
-    	return totalTime;
+    	return this.totalTime;
     }
     
  
@@ -52,7 +51,7 @@ public class PoliceOfficer{
             
             	 
             
-            return totalFine;
+            return this.totalFine;
         }
           
 
