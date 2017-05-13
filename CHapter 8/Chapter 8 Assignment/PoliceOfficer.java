@@ -1,37 +1,17 @@
-public class PoliceOfficer extends ParkingMeter {
+public class PoliceOfficer{
    
-	//Hour and hour Spent is suppose to be from ParkedCar
-	private ParkedCar hourSpent;
-    private double time;
-	private double fine;
-	
-	private double hour;
-    
-    
-    private double hoursParked;
     private String copName;
     private double badgeNum;
     
 
-    public PoliceOfficer(double boughtTime, double fine, double hours, String copName, double badgeNum, double hour){
+    public PoliceOfficer(String copName, double badgeNum){
 
-    super(boughtTime);
-    fine = fine;
-    hoursParked = hoursParked;
-    copName = copName;
-    badgeNum = badgeNum;
+    this.copName = copName;
+    this.badgeNum = badgeNum;
     
-    hour = hourSpent.getHour();
 
     }
     
-    //Gets time spent parked
-    public double PoliceOfficer(double time){
-    
-    time = boughtTime - hour;
-    
-    return time;
-    }
     
     //cops name
     public String getcopName()
@@ -44,26 +24,26 @@ public class PoliceOfficer extends ParkingMeter {
     public double getbadgeNum()
     {
 
-       return 0;
+    	return this.badgeNum;
     }
     
+   //Finds if the car has overstayed parking
+    double total (ParkedCar carStuff, double boughtTime){
+    	
+    	double totalTime = boughtTime - car.getHour;
+    	
+    	return totalTime;
+    }
     
  
 
-    //calculating fine
-        public double calculateFine() {
+    //Determines if the car overstaed parking
+        public void calculateFine(ParkedCar car) {
 
-        fine = boughtTime - hour;
-
-        if (time > 0) {
-            fine = fine * 25;
-            
-            return fine;
             
         }
-        return 0;
+        
+        
     }
 
 
-
-}
