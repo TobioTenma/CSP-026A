@@ -4,7 +4,7 @@ public class ParkingMeter {
    //constrcutor
     public ParkingMeter(double boughtTime){
 
-    boughtTime = boughtTime;
+    this.boughtTime = boughtTime;
 
     }
 
