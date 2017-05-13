@@ -42,7 +42,11 @@ public class ParkingTicketDemo {
 	     double badgeNum = scanner.nextDouble();
 	     
 	     PoliceOfficer policeS = new PoliceOfficer (copName, badgeNum);
+        
+        ParkingTicket parkingTT = new ParkingTicket (carS, policeS, parkedS);
 
+
+        System.out.println(parkingTT);
 
 
 	
