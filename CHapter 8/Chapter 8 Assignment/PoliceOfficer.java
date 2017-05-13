@@ -21,7 +21,7 @@ public class PoliceOfficer{
     public String getcopName()
     {
 
-       return copName;
+       return this.copName;
     }
     
     //bagde number
