@@ -9,14 +9,14 @@ public class ParkedCar {
 	    //constructor
 	    public ParkedCar(String make, String model, String color, double licenseNum, double hour){
 
-	    make = make;
-	    model = model;
-	    color = color;
-	    licenseNum = licenseNum;
-	    hour = hour;
+	    this.make = make;
+	    this.model = model;
+	    this.color = color;
+	    this.licenseNum = licenseNum;
+	    this.hour = hour;
 
 	    }
-
+	    
 
 	      public String getMake()
 	      {
