@@ -37,6 +37,8 @@ public class ParkingTicketDemo {
 	     //Stuff for PoliceOfficer
 	     System.out.println("What is the officers name?");
 	     String copName = scanner.nextLine();
+	     copName = scanner.nextLine();
+
 
 	     System.out.println("What is the officers badge number?");
 	     double badgeNum = scanner.nextDouble();
