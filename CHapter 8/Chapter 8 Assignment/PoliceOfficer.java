@@ -2,7 +2,6 @@ public class PoliceOfficer{
    
     private String copName;
     private double badgeNum;
-    private double boughtTime;
     private double totalTime;
     private double totalFine;
 
@@ -32,9 +31,9 @@ public class PoliceOfficer{
 
     
    //Finds if the car has overstayed parking
-    double total (ParkedCar carStuff){
+    double total (ParkedCar carStuff, ParkingMeter parkingstuff){
     	
-        totalTime =  carStuff.getHour() - boughtTime;
+        totalTime =  carStuff.getHour() -  parkingstuff.getboughtTime();
     	
     	return this.totalTime;
     }
